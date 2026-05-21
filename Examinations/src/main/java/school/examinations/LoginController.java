@@ -47,7 +47,7 @@ public class LoginController {
     public void handleCancel(ActionEvent event) {
         user.clear();
         pass.clear();
-        Connection conn = Connect.connection();
+        Connection conn = db.connect();
         if(conn!=null)
             System.out.println("Connection Successful");
         else
